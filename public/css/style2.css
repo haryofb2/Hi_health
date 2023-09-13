@@ -1,0 +1,397 @@
+html {
+    font-size: 0.85rem !important;
+}
+body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.col-form-label-sm {
+    text-transform: capitalize;
+}
+
+thead tr th {
+    text-transform: capitalize;
+    vertical-align: middle !important;
+}
+
+#wo_detail th {
+    text-align: center;
+}
+
+table.dataTable tr.dtrg-group th {
+    background-color: navajowhite !important;
+}
+
+@media screen and (min-width: 1200px) {
+    /* #wo_detail
+    {
+        min-width: 250vh;
+    } */
+    #wo_detail tr td:not(:first-child) {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    table.mobile-optimised {
+        word-wrap: break-word;
+        margin-top: 1rem;
+    }
+    table.mobile-optimised thead {
+        position: absolute;
+        left: -999em;
+        top: -999em;
+        display: block;
+    }
+    table.mobile-optimised td {
+        display: block;
+        float: left; /* ie9 and under hack */
+        width: 100%;
+        clear: both;
+        /* background:#d6d6d6; */
+        padding: 10px 5px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    table.mobile-optimised tbody,
+    table.mobile-optimised tr {
+        display: block;
+    }
+    .mobile-optimised td:before {
+        content: attr(data-th);
+        display: block;
+        font-weight: bold;
+        margin: 0 0 2px;
+        color: rgb(95, 95, 95);
+    }
+    .mobile-optimised tbody tr {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+        border-left: 15px solid maroon;
+        border-radius: 20px;
+        margin-top: 20px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* .container-fluid
+{
+    padding-bottom: 5vw;
+} */
+
+.modal-body tr td:first-child {
+    max-width: 20px;
+}
+
+.dtr-details tr td:first-child {
+    max-width: none;
+    /* background-color: red; */
+}
+
+/* .dtr-details tr td .btn {
+    background-color: var(--bs-btn-bg);
+} */
+
+.details tr td {
+    max-width: none !important;
+    min-width: none !important;
+    /* background-color: red; */
+}
+
+.hide_column {
+    display: none;
+}
+
+table.dataTable {
+    width: 100% !important;
+}
+
+#login_center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+​ .nowrap {
+    white-space: nowrap !important;
+    background-color: red;
+}
+
+#detail_show {
+    white-space: nowrap;
+}
+
+#detail_show thead th,
+#detail_show tbody td {
+    /* text-align: center; */
+    padding: 0 2rem 0 2rem;
+}
+
+a .list-group-item-action {
+    text-align: center;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: none;
+    text-align: left;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+#header_print img {
+    /* padding-top: 2rem; */
+    width: 100%;
+}
+
+#header_print h3 {
+    text-transform: uppercase;
+}
+
+#header_print p {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+#text_document {
+    text-align: right;
+}
+
+#body_print .kapital {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+@media print {
+    #signature {
+        page-break-inside: avoid;
+        margin-top: -350px;
+        text-align: center;
+    }
+    #spacer {
+        page-break-after: always;
+    }
+
+    #body_print {
+        padding-bottom: 350px;
+    }
+    /* #mr_detail_show thead {
+        background-color: #d8aa11 !important;
+    } */
+    #mr_detail_show thead th {
+        background-color: #d8aa1100 !important;
+    }
+}
+
+@media print and (color) {
+    * {
+        -webkit-print-color-adjust: exact;
+        -moz-print-color-adjust: exact;
+        -ms-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+#sign_name {
+    padding-top: 170px;
+}
+
+#print {
+    display: none;
+}
+
+#no_document {
+    background-color: #fff3cd;
+}
+
+#background_login {
+    background-image: url("../template/img/login.jpg");
+    background-size: cover;
+}
+
+.tab-content {
+    /* padding: 1rem; */
+}
+
+#po_detail tr td:not(:first-child) {
+    min-width: 200px;
+}
+#modal_pajak_table tr td:not(:first-child) {
+    min-width: 200px;
+    white-space: nowrap;
+}
+
+.count_number {
+    text-align: right;
+}
+
+/* input[type="text"]::placeholder {
+    text-align: right;
+} */
+#grand_total {
+    /* background: rgba(28, 200, 137, 0.4); */
+    font-weight: bold;
+    /* font-size: 1.5rem; */
+}
+
+#grand_total_section label,
+#grand_total_section input,
+#grand_total_text {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#grand_total_text {
+    text-align: right;
+}
+
+#form_inputan label {
+    text-transform: capitalize;
+}
+
+#head_form {
+    /* background-color: #a1c3ff80; */
+    background-color: #a1c7ff80;
+    padding: 1rem 0 0 0;
+    border-top: 1rem solid #21283480;
+    border-radius: 6px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+#nominal_po {
+    color: steelblue;
+}
+
+.bg-gradient-maroon {
+    background-color: #280000;
+    background-image: linear-gradient(180deg, #503334 10%, #2b0404 100%);
+    background-size: cover;
+}
+
+#show label,
+#body_print label {
+    text-transform: capitalize;
+    font-weight: 700;
+    text-decoration: underline;
+    /* font-size: 2rem; */
+}
+
+#nomor_dokumen {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+#nama_transaksi {
+    color: steelblue;
+}
+
+#no_document_edit {
+    color: steelblue;
+}
+
+#status_doc {
+    padding: 0.5rem;
+    /* background-color: red; */
+    color: white;
+}
+
+.nav-item a i {
+    color: rgb(245, 225, 91) !important;
+}
+
+.sidebar-brand {
+    background-color: rgb(248, 105, 105) !important;
+}
+
+#login_center {
+    opacity: 0.85;
+}
+
+#welcome {
+    background-image: url("../template/img/landing.jpg");
+    /* height: 90vh; */
+    background-size: cover;
+    border-radius: 10px;
+    color: white;
+}
+
+#welcome h1 {
+    text-align: center;
+}
+
+#subtitle {
+    color: rgb(121, 121, 121);
+    font-size: 0.75rem;
+}
+
+/* a .list-tab,
+ul.list-group-horizontal-sm {
+    border-radius: 0 0 0 0 !important;
+} */
+
+#transaction_tab {
+    padding: 1rem;
+    border: solid;
+    border-top: none;
+    border-width: 2px;
+    border-color: green;
+}
+
+#transaction_pills {
+    border: solid;
+    border-bottom: none;
+    border-width: 2px;
+    border-color: green;
+}
+@media screen and (min-width: 1024px) {
+    #dataTable_card {
+        margin: 1rem;
+    }
+}
+#dataTable_card {
+    border-radius: 10px;
+}
+
+#unit_wo {
+    padding: 1rem;
+    background-color: rgba(255, 174, 0, 0.282);
+    border-radius: 10px;
+}
+
+#unit_wo input {
+    background-color: rgba(255, 255, 255, 0.473);
+    font-weight: 600;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+#modal_input_breakdown_wo td {
+    vertical-align: middle;
+}
+
+iframe {
+    border: none;
+}
+
+tbody .form-control-sm {
+    min-width: 50px !important;
+}

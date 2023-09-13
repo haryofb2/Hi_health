@@ -1,0 +1,19 @@
+html {
+    font-size: 0.75rem !important;
+}
+
+#transaction_table thead {
+    font-weight: bold;
+}
+
+td.dtr-control:before {
+    background-color: red;
+}
+
+.hide_column {
+    display: none;
+}
+
+#vertical_tangah {
+    margin: 0 auto !important;
+}
